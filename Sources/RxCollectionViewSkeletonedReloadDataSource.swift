@@ -16,6 +16,8 @@ public class RxCollectionViewSkeletonedReloadDataSource<S: SectionModelType>
     public typealias NumberOfItemsInSection = (RxCollectionViewSkeletonedReloadDataSource<S>, UICollectionView, Int) -> Int
     public typealias ReuseIdentifierForItemAtIndexPath = (RxCollectionViewSkeletonedReloadDataSource<S>, UICollectionView, IndexPath) -> String
     
+    var defaultSectionCount = 0
+    var defaultItemCount = 0
     var numberOfSections: NumberOfSections
     var numberOfItemsInSection: NumberOfItemsInSection
     var reuseIdentifierForItemAtIndexPath: ReuseIdentifierForItemAtIndexPath
@@ -39,11 +41,13 @@ public class RxCollectionViewSkeletonedReloadDataSource<S: SectionModelType>
     }
     
     public func numSections(in collectionSkeletonView: UICollectionView) -> Int {
-        return numberOfSections(self, collectionSkeletonView)
+        let item = numberOfSections(self, collectionSkeletonView)
+        return item > 0 ? item : defaultSectionCount
     }
     
     public func collectionSkeletonView(_ skeletonView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return numberOfItemsInSection(self, skeletonView, section)
+        let item = numberOfItemsInSection(self, skeletonView, section)
+        return item > 0 ? item : defaultItemCount
     }
     
     public func collectionSkeletonView(_ skeletonView: UICollectionView, cellIdentifierForItemAt indexPath: IndexPath) -> String {

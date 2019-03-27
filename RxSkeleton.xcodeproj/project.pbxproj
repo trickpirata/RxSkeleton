@@ -31,9 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5689D893241D6E04734DDFE5 /* Pods-RxSkeleton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSkeleton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSkeleton/Pods-RxSkeleton.debug.xcconfig"; sourceTree = "<group>"; };
 		5A0F395EBA8E564EC014A76E /* Pods-RxSkeleton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSkeleton.debug.xcconfig"; path = "Target Support Files/Pods-RxSkeleton/Pods-RxSkeleton.debug.xcconfig"; sourceTree = "<group>"; };
 		9778963813C79C19D791BC10 /* Pods_RxSkeleton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSkeleton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DF97539DC0A37D942813EC /* Pods-RxSkeleton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSkeleton.release.xcconfig"; path = "Target Support Files/Pods-RxSkeleton/Pods-RxSkeleton.release.xcconfig"; sourceTree = "<group>"; };
+		B9E88812D5B8680E2109A95B /* Pods-RxSkeleton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSkeleton.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSkeleton/Pods-RxSkeleton.release.xcconfig"; sourceTree = "<group>"; };
 		CB36CE4921B22BB700245D5A /* RxSkeleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSkeleton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB36CE4C21B22BB700245D5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB36CE4E21B22BB700245D5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,8 @@
 			children = (
 				5A0F395EBA8E564EC014A76E /* Pods-RxSkeleton.debug.xcconfig */,
 				B7DF97539DC0A37D942813EC /* Pods-RxSkeleton.release.xcconfig */,
+				5689D893241D6E04734DDFE5 /* Pods-RxSkeleton.debug.xcconfig */,
+				B9E88812D5B8680E2109A95B /* Pods-RxSkeleton.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -230,7 +234,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxSkeleton/Pods-RxSkeleton-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxSkeleton/Pods-RxSkeleton-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -253,7 +257,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSkeleton/Pods-RxSkeleton-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSkeleton/Pods-RxSkeleton-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E99DBC3C227A3DBB5C180243 /* [CP] Check Pods Manifest.lock */ = {
@@ -441,7 +445,7 @@
 		};
 		CB36CE5C21B22BB900245D5A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A0F395EBA8E564EC014A76E /* Pods-RxSkeleton.debug.xcconfig */;
+			baseConfigurationReference = 5689D893241D6E04734DDFE5 /* Pods-RxSkeleton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -460,7 +464,7 @@
 		};
 		CB36CE5D21B22BB900245D5A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7DF97539DC0A37D942813EC /* Pods-RxSkeleton.release.xcconfig */;
+			baseConfigurationReference = B9E88812D5B8680E2109A95B /* Pods-RxSkeleton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
