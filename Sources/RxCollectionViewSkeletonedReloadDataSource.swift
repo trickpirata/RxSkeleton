@@ -16,8 +16,8 @@ public class RxCollectionViewSkeletonedReloadDataSource<S: SectionModelType>
     public typealias NumberOfItemsInSection = (RxCollectionViewSkeletonedReloadDataSource<S>, UICollectionView, Int) -> Int
     public typealias ReuseIdentifierForItemAtIndexPath = (RxCollectionViewSkeletonedReloadDataSource<S>, UICollectionView, IndexPath) -> String
     
-    var defaultSectionCount = 0
-    var defaultItemCount = 0
+    public var defaultSectionCount = 1
+    public var defaultItemCount = 0
     var numberOfSections: NumberOfSections
     var numberOfItemsInSection: NumberOfItemsInSection
     var reuseIdentifierForItemAtIndexPath: ReuseIdentifierForItemAtIndexPath
